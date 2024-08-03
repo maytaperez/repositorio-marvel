@@ -1,18 +1,172 @@
 /* Reset de código */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-  
-body {
-    background-color: #e95159;
-    font-family: "Gabarito", sans-serif;
-    scroll-behavior: smooth;
+
+.body {
+  background-color: #e95159;
+  font-family: "Gabarito", sans-serif;
+  scroll-behavior: smooth;
 }
-  
+
 /* Header */
 .header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 5%;
+  background-color: #f00423;
+  border-bottom: 2px solid #f00423;
+}
+
+/* Logo */
+.logo {
+  cursor: pointer;
+  flex: 1 1 auto;
+
+  img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+/* Nav-links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex: 2 1 auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  li {
+    padding: 0 1em;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    a {
+      font-weight: 700;
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+
+/* Botón */
+.btn {
+  button {
+    margin-left: 1em;
+    font-weight: 700;
+    color: black;
+    padding: 0.5em 1.5em;
+    background: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+/* Titulo */
+.titulo {
+  text-align: center;
+  width: 100%;
+  padding: 2em 5%;
+  flex-grow: 1;
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+    color: black;
+  }
+}
+
+/* Main */
+.main-index {
+  padding: 2em 5%;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+/* Comics */
+.comics,
+.studios {
+  text-align: center;
+}
+
+.img1,
+.img2 {
+  width: 100%;
+  height: auto;
+  max-width: 30em;
+  margin: 1em auto;
+  padding: 0.5em;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Superheroes y Villanos */
+.super,
+.villanos {
+  margin-left: 2.5em;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2em 0;
+}
+
+.imagenes-heroesyvillanos {
+  width: 10em;
+  height: 10em;
+  margin: 1em;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #fff;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 8px;
+  }
+}
+
+/* Footer */
+.piepágina {
+  width: 100%;
+  background-color: #f00423;
+
+  .grupo1 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -20,211 +174,466 @@ body {
     padding: 1em 5%;
     background-color: #f00423;
     border-bottom: 2px solid #f00423;
+
+    .box {
+      .redsocial {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      figure {
+        img {
+          width: 12.5em;
+        }
+      }
+
+      h2 {
+        color: black;
+        margin-left: 1.25em;
+        font-size: 1.25em;
+        text-align: center;
+      }
+
+      p {
+        color: black;
+        margin-bottom: 0.5em;
+      }
+
+      .redsocial a {
+        display: inline-block;
+        text-decoration: none;
+        width: 2.25em;
+        height: 2.25em;
+        line-height: 2.25em;
+        color: white;
+        margin-right: 0.5em;
+        text-align: center;
+        transition: all 300ms ease;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+
+  .grupo2 {
+    background-color: #f00423;
+    padding: 0.75em 0.5em;
+    text-align: center;
+    color: black;
+  }
 }
-  
-/* Logo */
-.logo {
-    cursor: pointer;
-    flex: 1 1 auto;
-  
-    img {
-      height: 70px;
-      width: auto;
-      transition: all 0.3s;
-  
+
+/* Spider-Man */
+.header-s {
+  background-color: #ca2326;
+  color: #fff;
+  padding: 1em;
+  position: relative;
+
+  .header-container-s {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .logo {
+      max-width: 110px;
+      height: auto;
+      position: absolute;
+      left: 1em;
+      margin-left: 70px;
+      margin-top: 40px;
+      transition: transform 0.2s;
+
       &:hover {
         transform: scale(1.2);
       }
     }
   }
-  
-/* Nav-links */
-.nav-links {
-    list-style: none;
+
+  .image-row-s {
     display: flex;
-    flex: 2 1 auto;
     justify-content: space-around;
+    margin-top: 30px;
     flex-wrap: wrap;
-  
-    li {
-      padding: 0 1em;
-  
-      &:hover {
-        transform: scale(1.1);
-      }
-  
+
+    img {
+      width: calc(33.33% - 10px);
+      max-width: 300px;
+      height: auto;
+      border: 2px solid #333;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+
+    .logo {
+      position: relative;
+      margin: 0 auto 0.5em;
+    }
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-row img {
+    width: 80%;
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-l img {
+    width: calc(100% - 10px);
+  }
+}
+
+/* Iron Man */
+.header-i {
+  background-color: #FF4500;
+  color: #fff;
+  padding: 1em;
+  position: relative;
+
+  .header-container-i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    h1 {
+      margin: 0;
+      text-align: center;
+      flex-grow: 1;
+    }
+  }
+
+  .image-row-i {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+
+    img {
+      width: calc(33.33% - 10px);
+      max-width: 300px;
+      height: auto;
+      border: 2px solid #333;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/* Capitán América */
+.body-c {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.header-c {
+  background-color: #003366;
+  color: #fff;
+  padding: 1em;
+  position: relative;
+
+  .header-container-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    h1 {
+      margin: 0;
+      text-align: center;
+      flex-grow: 1;
+    }
+  }
+
+  .nav-sic,
+  .ul-sic {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    .li-sic {
+      margin: 0 1em;
+
       a {
-        font-weight: 700;
-        color: black;
+        color: #fff;
         text-decoration: none;
       }
     }
   }
-  
-/* Botón */
-.btn {
-    button {
-      margin-left: 1em;
-      font-weight: 700;
-      color: black;
-      padding: 0.5em 1.5em;
-      background: white;
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: all 0.3s ease 0s;
-  
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
+}
+
+.main-sic {
+  padding: 2em;
+}
+
+.section-sic {
+  margin-bottom: 2em;
+
+  h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
   }
-  
-/* Titulo */
-.titulo {
-    text-align: center;
-    width: 100%;
-    padding: 2em 5%;
-    flex-grow: 1;
-  
-    h1 {
-      font-size: 2em;
-    }
-  
-    h2 {
-      font-size: 1.25em;
-      color: black;
-    }
+
+  .ul-2 {
+    padding-left: 1em;
+  }
 }
-  
-/* Main */
-main {
-    padding: 2em 5%;
-}
-  
-/* Container */
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-}
-  
-/* Comics */
-  .comics,
-  .studios {
-    text-align: center;
-}
-  
-.img1,
-.img2 {
-    width: 100%;
+
+.image-row-c {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  flex-wrap: wrap;
+
+  img {
+    width: calc(33.33% - 10px);
+    max-width: 300px;
     height: auto;
-    max-width: 30em;
-    margin: 1em auto;
-    padding: 0.5em;
-    border-radius: 8px;
-    overflow: hidden;
+    border: 2px solid #333;
+    margin-bottom: 10px;
+  }
 }
-  
-/* Superheroes y Villanos */
-.super,
-.villanos {
-    margin-left: 2.5em;
+
+.footer-c {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
 }
-  
-.imagenes {
+
+/* Villanos */
+/* Kang */
+.body-k {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.header-k {
+  background-color: #2E0854;
+  color: #fff;
+  padding: 1em;
+  position: relative;
+
+  .header-container-k {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-    margin: 2em 0;
-}
-  
-.imagenes-heroesyvillanos {
-    width: 10em;
-    height: 10em;
-    margin: 1em;
-    padding: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    background-color: #fff;
-    overflow: hidden;
-  
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: fill;
-      border-radius: 8px;
-    }
-}
-  
-/* Footer */
-  .piepagina {
-    width: 100%;
-    background-color: #f00423;
-  
-    .grupo1 {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1em 5%;
-      background-color: #f00423;
-      border-bottom: 2px solid #f00423;
-  
-      .box {
-        .redsocial {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-  
-        figure {
-          img {
-            width: 12.5em;
-          }
-        }
-  
-        h2 {
-          color: black;
-          margin-left: 1.25em;
-          font-size: 1.25em;
-          text-align: center;
-        }
-  
-        p {
-          color: black;
-          margin-bottom: 0.5em;
-        }
-      }
-  
-      .redsocial {
-        a {
-          display: inline-block;
-          text-decoration: none;
-          width: 2.25em;
-          height: 2.25em;
-          line-height: 2.25em;
-          color: white;
-          margin-right: 0.5em;
-          text-align: center;
-          transition: all 300ms ease;
-  
-          &:hover {
-            color: black;
-          }
-        }
-      }
-    }
-  
-    .grupo2 {
-      background-color: #f00423;
-      padding: 0.75em 0.5em;
+    justify-content: center;
+    position: relative;
+
+    h1 {
+      margin: 0;
       text-align: center;
-      color: black;
+      flex-grow: 1;
     }
   }
-  
+
+  .nav-sic,
+  .ul-sic {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    .li-sic {
+      margin: 0 1em;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.main-sic {
+  padding: 2em;
+}
+
+.section-sic {
+  margin-bottom: 2em;
+
+  h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
+  }
+
+  .ul-2 {
+    padding-left: 1em;
+  }
+}
+
+.img-k {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+
+  img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+
+.footer-k {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* Loki */
+.body-l {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+}
+
+.header-l {
+  background-color: #2E0854;
+  color: #fff;
+  padding: 1em;
+  position: relative;
+
+  .header-container-l {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    h1 {
+      margin: 0;
+      text-align: center;
+      flex-grow: 1;
+      color: #9c27b0;
+    }
+  }
+}
+
+.main-sic {
+  padding: 2em;
+}
+
+.section-sic {
+  margin-bottom: 2em;
+
+  .h2-l {
+    color: #9c27b0;
+  }
+
+  .ul-2 {
+    padding-left: 1em;
+  }
+}
+
+.img-l {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+
+  img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+
+.footer-k {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* Thanos */
+.body-t {
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2c003e;
+  color: #f5f5f5;
+}
+
+.header-t {
+  background-color: #46005b;
+  padding: 20px;
+  text-align: center;
+
+  .title-t {
+    margin: 0;
+    color: #e6b800;
+  }
+}
+
+.main-t {
+  padding: 20px;
+
+  .seccion-titulo,
+  .seccion-subtitulo {
+    color: #e6b800;
+  }
+
+  .image-row-t img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .text-content-t {
+    color: #f5f5f5;
+  }
+}
+
+.footer3 {
+  background-color: #46005b;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+
+  .footer-texto3 {
+    color: #e6b800;
+  }
+}
