@@ -548,21 +548,6 @@ h2{
   color: #9c27b0;
 }
 
-.nav2 ul {
-  list-style: none;
-  padding: 0;
-}
-
-.nav2 ul li {
-  display: inline;
-  margin-right: 10px;
-}
-
-.nav2 ul li a {
-  color: #9c27b0;
-  text-decoration: none;
-}
-
 /* Main */
 .main-sic {
   padding: 2em;
@@ -619,21 +604,6 @@ h2{
 .title-t {
   margin: 0;
   color: #e6b800; 
-}
-
-.nav-t ul {
-  list-style: none;
-  padding: 0;
-}
-
-.nav-t ul li {
-  display: inline;
-  margin-right: 10px;
-}
-
-.nav-t ul li .nav-link-t {
-  color: #e6b800; 
-  text-decoration: none;
 }
 
 .main-t {
