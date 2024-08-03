@@ -1,0 +1,230 @@
+/* Reset de código */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    background-color: #e95159;
+    font-family: "Gabarito", sans-serif;
+    scroll-behavior: smooth;
+}
+  
+/* Header */
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 5%;
+    background-color: #f00423;
+    border-bottom: 2px solid #f00423;
+}
+  
+/* Logo */
+.logo {
+    cursor: pointer;
+    flex: 1 1 auto;
+  
+    img {
+      height: 70px;
+      width: auto;
+      transition: all 0.3s;
+  
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+  
+/* Nav-links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex: 2 1 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+    li {
+      padding: 0 1em;
+  
+      &:hover {
+        transform: scale(1.1);
+      }
+  
+      a {
+        font-weight: 700;
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+  
+/* Botón */
+.btn {
+    button {
+      margin-left: 1em;
+      font-weight: 700;
+      color: black;
+      padding: 0.5em 1.5em;
+      background: white;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+  
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  
+/* Titulo */
+.titulo {
+    text-align: center;
+    width: 100%;
+    padding: 2em 5%;
+    flex-grow: 1;
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    h2 {
+      font-size: 1.25em;
+      color: black;
+    }
+}
+  
+/* Main */
+main {
+    padding: 2em 5%;
+}
+  
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+  
+/* Comics */
+  .comics,
+  .studios {
+    text-align: center;
+}
+  
+.img1,
+.img2 {
+    width: 100%;
+    height: auto;
+    max-width: 30em;
+    margin: 1em auto;
+    padding: 0.5em;
+    border-radius: 8px;
+    overflow: hidden;
+}
+  
+/* Superheroes y Villanos */
+.super,
+.villanos {
+    margin-left: 2.5em;
+}
+  
+.imagenes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2em 0;
+}
+  
+.imagenes-heroesyvillanos {
+    width: 10em;
+    height: 10em;
+    margin: 1em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+    overflow: hidden;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      border-radius: 8px;
+    }
+}
+  
+/* Footer */
+  .piepagina {
+    width: 100%;
+    background-color: #f00423;
+  
+    .grupo1 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1em 5%;
+      background-color: #f00423;
+      border-bottom: 2px solid #f00423;
+  
+      .box {
+        .redsocial {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+  
+        figure {
+          img {
+            width: 12.5em;
+          }
+        }
+  
+        h2 {
+          color: black;
+          margin-left: 1.25em;
+          font-size: 1.25em;
+          text-align: center;
+        }
+  
+        p {
+          color: black;
+          margin-bottom: 0.5em;
+        }
+      }
+  
+      .redsocial {
+        a {
+          display: inline-block;
+          text-decoration: none;
+          width: 2.25em;
+          height: 2.25em;
+          line-height: 2.25em;
+          color: white;
+          margin-right: 0.5em;
+          text-align: center;
+          transition: all 300ms ease;
+  
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+  
+    .grupo2 {
+      background-color: #f00423;
+      padding: 0.75em 0.5em;
+      text-align: center;
+      color: black;
+    }
+  }
+  
